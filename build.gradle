@@ -1,0 +1,59 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.1.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+ext.microserviceBaseName = 'es'
+ext.globalVersion = '1.0.0'
+ext.deployDir = 'deploy/application/dist'
+ext.buildType = 'SNAPSHOT'
+//
+jar {
+    baseName = project.property('microserviceBaseName')
+    version =  project.property('globalVersion') + '.' + project.property('buildType')
+    destinationDir = file(project.property('deployDir'))
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    // tag::jetty[]
+    compile("org.springframework.boot:spring-boot-starter-web") {
+        exclude module: "spring-boot-starter-tomcat"
+    }
+    compile("org.springframework.boot:spring-boot-starter-jetty")
+    // end::jetty[]
+    
+    // tag::actuator[]
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    // end::actuator[]
+    
+    // tag::elastic search
+    compile("org.springframework.boot:spring-boot-starter-data-elasticsearch")
+    //compile("org.springframework.data:spring-data-elasticsearch:2.10.RELEASE")
+    // end::elastic search
+    
+    compile("org.apache.commons:commons-lang3:3.5")
+    compile("commons-io:commons-io:2.5")
+    
+    
+   
+    // tag::testCompile("junit:junit")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    // end::testCompile("junit:junit")
+    
+}

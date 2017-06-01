@@ -1,0 +1,307 @@
+# GET http://10.10.10.2:31009/ceo/_mapping
+{
+  "ceo": {
+    "mappings": {
+      "ceo_type": {
+        "properties": {
+          "address": {
+            "properties": {
+              "addressLocality": {
+                "type": "string"
+              },
+              "addressRegion": {
+                "type": "string"
+              },
+              "streetAddress": {
+                "type": "string"
+              }
+            }
+          },
+          "all_attributes": {
+            "properties": {
+              "age": {
+                "type": "string"
+              },
+              "district": {
+                "type": "string"
+              },
+              "relation": {
+                "type": "string"
+              }
+            }
+          },
+          "gender": {
+            "type": "string"
+          },
+          "identifier": {
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "url_identifier": {
+                "type": "string"
+              }
+            }
+          },
+          "name": {
+            "type": "string"
+          },
+          "parent": {
+            "properties": {
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#GET http://10.10.10.2:31009/ceo/_search
+{
+  "took": 198,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 127962085,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "ceo",
+        "_type": "ceo_type",
+        "_id": "AViW3b3GxFjjljDi43v0",
+        "_score": 1,
+        "_source": {
+          "name": "Shivaganga Malyagol",
+          "identifier": {
+            "id": "ZKT2336014"
+          },
+          "address": {
+            "addressLocality": "Arabhavi",
+            "addressRegion": "BELGAUM"
+          },
+          "parent": {
+            "name": "Prakash Prakash"
+          },
+          "all_attributes": {
+            "age": "43",
+            "district": "BELGAUM"
+          }
+        }
+      },
+      {
+        "_index": "ceo",
+        "_type": "ceo_type",
+        "_id": "AViW3b3GxFjjljDi43v1",
+        "_score": 1,
+        "_source": {
+          "name": "Dundappa Malyagol",
+          "identifier": {
+            "id": "ZKT3101706"
+          },
+          "address": {
+            "addressLocality": "Arabhavi",
+            "addressRegion": "BELGAUM"
+          },
+          "parent": {
+            "name": "Gangappa Gangappa"
+          },
+          "all_attributes": {
+            "age": "36",
+            "district": "BELGAUM"
+          }
+        }
+      },
+      {
+        "_index": "ceo",
+        "_type": "ceo_type",
+        "_id": "AViW3b3GxFjjljDi43v2",
+        "_score": 1,
+        "_source": {
+          "name": "Parushuram Malyagol",
+          "identifier": {
+            "id": "ZKT3101714"
+          },
+          "address": {
+            "addressLocality": "Arabhavi",
+            "addressRegion": "BELGAUM"
+          },
+          "parent": {
+            "name": "Gangappa Gangappa"
+          },
+          "all_attributes": {
+            "age": "33",
+            "district": "BELGAUM"
+          }
+        }
+      },
+      {
+        "_index": "ceo",
+        "_type": "ceo_type",
+        "_id": "AViW3b3GxFjjljDi43v5",
+        "_score": 1,
+        "_source": {
+          "name": "Ramappa Malyagol",
+          "identifier": {
+            "id": "ZKT2336055"
+          },
+          "address": {
+            "addressLocality": "Arabhavi",
+            "addressRegion": "BELGAUM"
+          },
+          "parent": {
+            "name": "Gangappa Gangappa"
+          },
+          "all_attributes": {
+            "age": "66",
+            "district": "BELGAUM"
+          }
+        }
+      },
+      {
+        "_index": "ceo",
+        "_type": "ceo_type",
+        "_id": "AViW3b3GxFjjljDi43v8",
+        "_score": 1,
+        "_source": {
+          "name": "Malappa Malyagol",
+          "identifier": {
+            "id": "ZKT2336089"
+          },
+          "address": {
+            "addressLocality": "Arabhavi",
+            "addressRegion": "BELGAUM"
+          },
+          "parent": {
+            "name": "Gangappa Gangappa"
+          },
+          "all_attributes": {
+            "age": "54",
+            "district": "BELGAUM"
+          }
+        }
+      },
+      {
+        "_index": "ceo",
+        "_type": "ceo_type",
+        "_id": "AViW3b3GxFjjljDi43wE",
+        "_score": 1,
+        "_source": {
+          "name": "Renuka Bandi",
+          "identifier": {
+            "id": "ZKT3540788"
+          },
+          "address": {
+            "addressLocality": "Arabhavi",
+            "addressRegion": "BELGAUM"
+          },
+          "parent": {
+            "name": "Ramappa Ramappa"
+          },
+          "all_attributes": {
+            "age": "31",
+            "district": "BELGAUM"
+          }
+        }
+      },
+      {
+        "_index": "ceo",
+        "_type": "ceo_type",
+        "_id": "AViW3b3GxFjjljDi43wF",
+        "_score": 1,
+        "_source": {
+          "name": "Lakkavwa Bandi",
+          "identifier": {
+            "id": "DTW2102028"
+          },
+          "address": {
+            "addressLocality": "Arabhavi",
+            "addressRegion": "BELGAUM"
+          },
+          "parent": {
+            "name": "Viththal Viththal"
+          },
+          "all_attributes": {
+            "age": "33",
+            "district": "BELGAUM"
+          }
+        }
+      },
+      {
+        "_index": "ceo",
+        "_type": "ceo_type",
+        "_id": "AViW3b3GxFjjljDi43wG",
+        "_score": 1,
+        "_source": {
+          "name": "Dundappa Antaragatti",
+          "identifier": {
+            "id": "ZKT2336139"
+          },
+          "address": {
+            "addressLocality": "Arabhavi",
+            "addressRegion": "BELGAUM"
+          },
+          "parent": {
+            "name": "Kenchappa Kenchappa"
+          },
+          "all_attributes": {
+            "age": "43",
+            "district": "BELGAUM"
+          }
+        }
+      },
+      {
+        "_index": "ceo",
+        "_type": "ceo_type",
+        "_id": "AViW3b3GxFjjljDi43wH",
+        "_score": 1,
+        "_source": {
+          "name": "Sanvakka Antaragatti",
+          "identifier": {
+            "id": "ZKT3541406"
+          },
+          "address": {
+            "addressLocality": "Arabhavi",
+            "addressRegion": "BELGAUM"
+          },
+          "parent": {
+            "name": "Dundappa Dundappa"
+          },
+          "all_attributes": {
+            "age": "37",
+            "district": "BELGAUM"
+          }
+        }
+      },
+      {
+        "_index": "ceo",
+        "_type": "ceo_type",
+        "_id": "AViW3b3GxFjjljDi43wT",
+        "_score": 1,
+        "_source": {
+          "name": "Ratnavva Antaragatti",
+          "identifier": {
+            "id": "ZKT2336303"
+          },
+          "address": {
+            "addressLocality": "Arabhavi",
+            "addressRegion": "BELGAUM"
+          },
+          "parent": {
+            "name": "Ramappa Ramappa"
+          },
+          "all_attributes": {
+            "age": "66",
+            "district": "BELGAUM"
+          }
+        }
+      }
+    ]
+  }
+}
