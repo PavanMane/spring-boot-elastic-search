@@ -4,7 +4,7 @@
 1. Elasticsearch 2.4.3
 2. java 1.8
 3. spring boot 
-4. spring boot elastic search
+4. spring boot starter data elastic search
 
 Steps: -
 1. Upload the sample data set to elasticsearch,you will also find the mappings
