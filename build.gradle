@@ -49,10 +49,10 @@ dependencies {
     
     compile("org.apache.commons:commons-lang3:3.5")
     compile("commons-io:commons-io:2.5")
-    
-    
    
     // tag::testCompile("junit:junit")
+    testCompile("com.sun.jna:jna:3.0.9")
+	testCompile("uk.co.jemos.podam:podam:7.0.5.RELEASE")
     testCompile("org.springframework.boot:spring-boot-starter-test")
     // end::testCompile("junit:junit")
     

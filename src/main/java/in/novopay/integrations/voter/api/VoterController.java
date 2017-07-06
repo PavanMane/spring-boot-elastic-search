@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import in.novopay.integrations.BaseResponse;
+import in.novopay.integrations.ResponseCode;
 import in.novopay.integrations.voter.service.IVoterService;
 import in.novopay.integrations.voter.service.VoterDTO;
 

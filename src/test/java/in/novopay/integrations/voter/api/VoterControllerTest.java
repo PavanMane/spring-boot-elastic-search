@@ -14,6 +14,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import in.novopay.integrations.BaseResponse;
 import in.novopay.integrations.BaseSpringTest;
 import in.novopay.integrations.voter.service.VoterDTO;
 

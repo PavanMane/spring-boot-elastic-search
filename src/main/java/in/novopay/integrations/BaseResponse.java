@@ -1,4 +1,4 @@
-package in.novopay.integrations.voter.api;
+package in.novopay.integrations;
 
 public class BaseResponse {
 	private String code;

@@ -1,4 +1,4 @@
-package in.novopay.integrations.voter.api;
+package in.novopay.integrations;
 
 public interface ResponseCode {
 	String SUCCESS = "Success";
